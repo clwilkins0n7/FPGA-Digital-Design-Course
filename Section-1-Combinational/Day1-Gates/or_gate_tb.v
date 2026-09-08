@@ -16,7 +16,7 @@
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-//      Correction - for each #10 missed a ";" at the end
+//      Correction - for each #10 missed a ";" at the end. As well as the "$finish;"
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -42,6 +42,7 @@ module or_gate_tb(
         a = 1; b = 1; #10;
         $display("a=%b, b=%b, y=%b", a, b, y);
         
+        $finish;
     end
     
 endmodule

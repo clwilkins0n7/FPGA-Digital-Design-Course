@@ -16,7 +16,7 @@
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-//      Correction - Missed both "#10;" - time error
+//      Correction - Missed both "#10;" - time error, and missed "$finish;"
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -35,6 +35,8 @@ module not_gate_tb(
         
         a = 1; #10;
         $display("a=%b, y=%b", a, y);
+        
+        $finish;
     end 
     
 endmodule
